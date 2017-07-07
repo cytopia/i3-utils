@@ -11,16 +11,16 @@ all:
 	@echo "'make uninstall' will remove those files from /usr/local/bin/"
 
 install:
+	# Create dir
 	${MKDIR_P} /usr/local/bin/
-
-	# Copy executeables
+	# Copy files
 	install -m 0755 bin/system-hibernate /usr/local/bin/system-hibernate
-	install -m 0755 bin/system-hibernate /usr/local/bin/system-reboot
-	install -m 0755 bin/system-hibernate /usr/local/bin/system-shutdown
-	install -m 0755 bin/system-hibernate /usr/local/bin/system-suspend
-	install -m 0755 bin/system-hibernate /usr/local/bin/xcolorpick
-	install -m 0755 bin/system-hibernate /usr/local/bin/xlock
-	install -m 0755 bin/system-hibernate /usr/local/bin/xscreenshot
+	install -m 0755 bin/system-reboot    /usr/local/bin/system-reboot
+	install -m 0755 bin/system-shutdown  /usr/local/bin/system-shutdown
+	install -m 0755 bin/system-suspend   /usr/local/bin/system-suspend
+	install -m 0755 bin/xcolorpick       /usr/local/bin/xcolorpick
+	install -m 0755 bin/xlock            /usr/local/bin/xlock
+	install -m 0755 bin/xscreenshot      /usr/local/bin/xscreenshot
 
 uninstall:
 	# Remove files

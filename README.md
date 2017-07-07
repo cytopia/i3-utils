@@ -53,4 +53,11 @@ mode "$mode_system" {
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
 }
+
+# Screenshot (with multi monitors)
+bindsym Print exec "xscreenshot -m multi"
+# Screenshot (select rectangle)
+bindsym $mod+Sys_Req exec "xscreenshot -m selection"
+# Screenshot (active window)
+bindsym $mod+Shift+Sys_Req exec "xscreenshot -m window"
 ```
