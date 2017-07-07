@@ -1,0 +1,8 @@
+#!/bin/sh
+
+dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 \
+    "org.freedesktop.login1.Manager.PowerOff" boolean:true
+
+#if ! systemctl poweroff 2>/dev/null; then
+#	gksu systemctl poweroff
+#fi

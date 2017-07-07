@@ -1,0 +1,8 @@
+#!/bin/sh
+
+dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 \
+    "org.freedesktop.login1.Manager.Suspend" boolean:true
+
+#if ! systemctl suspend 2>/dev/null; then
+#	gksu systemctl suspend
+#fi
