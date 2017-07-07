@@ -2,6 +2,8 @@
 
 A few shell wrapper for common everyday tools on [i3](https://github.com/i3/i3).
 
+Most scripts write errors (missing dependencies and failures) to stderr and logfies und `~/.log/<script-name>.err`.
+
 ## Integration
 
 #### Install
