@@ -5,13 +5,14 @@ A few shell wrapper for common everyday tools on [i3](https://github.com/i3/i3).
 ## Integration
 
 #### Install
-```
+
+```shell
 $ sudo make install
 ```
 
 #### Uninstall
 
-```
+```shell
 $ sudo make uninstall
 ```
 
@@ -36,7 +37,7 @@ $ sudo make uninstall
 
 #### Example usage for i3
 
-```
+```shell
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (p) poweroff
 mode "$mode_system" {
 	bindsym l exec --no-startup-id system-lock, mode "default"
@@ -51,5 +52,3 @@ mode "$mode_system" {
 	bindsym Escape mode "default"
 }
 ```
-
-
