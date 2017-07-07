@@ -1,13 +1,15 @@
 # i3-utils
 
+A few shell wrapper for common everyday tools on [i3](https://github.com/i3/i3).
 
-## Installation
+## Integration
 
+#### Install
 ```
 $ sudo make install
 ```
 
-## Removal
+#### Uninstall
 
 ```
 $ sudo make uninstall
@@ -15,34 +17,24 @@ $ sudo make uninstall
 
 ## Tools
 
-### System tools
+#### System tools
 
-#### [system-hibernate](bin/system-hibernate)
+| Tool | Description |
+|------|-------------|
+| [system-hibernate](bin/system-hibernate) | Wrapper script to hibternate as user. |
+| [system-reboot](bin/system-reboot)       | Wrapper script to reboot as user.     |
+| [system-shutdown](bin/system-shutdown)   | Wrapper script to shutdown as user.   |
+| [system-suspend](bin/system-suspend)     | Wrapper script to suspend as user.    |
 
-Wrapper script to hibternate as user.
+#### X tools
 
-#### [system-reboot](bin/system-reboot)
+| Tool | Description |
+|------|-------------|
+| [xcolorpick](bin/xcolorpick) | Zenity based RGB color picker for any pixel on your screen. |
+| [xlock](bin/xlock)           | Wrapper for `i3lock` with blurred screenshot and optional custom overlay which will also suspend any notifications during lock and can be run in the background without locking the script itself, so that you can run another script afterwards (such as [system-suspend](bin/system-suspend)). |
+| [xscreenshot](bin/xscreenshot) | Wrapper for `scrot`. |
 
-Wrapper script to reboot as user.
-
-#### [system-shutdown](bin/system-shutdown)
-
-Wrapper script to shutdown as user.
-
-#### [system-suspend](bin/system-suspend)
-
-Wrapper script to suspend as user.
-
-
-### X tools
-
-#### [xcolorpick](bin/xcolorpick)
-
-Zenity based RGB color picker for any pixel on your screen.
-
-#### [xlock](bin/xlock)
-
-Wrapper for `i3lock` with blurred screenshot and optional custom overlay which will also suspend any notifications during lock and can be run in the background without locking the script itself, so that you can run another script afterwards (such as [system-suspend](bin/system-suspend)).
+#### Example usage for i3
 
 ```
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (p) poweroff
@@ -60,6 +52,4 @@ mode "$mode_system" {
 }
 ```
 
-#### [xscreenshot](bin/xscreenshot)
 
-Wrapper for `scrot`.
