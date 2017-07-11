@@ -19,6 +19,8 @@ install:
 	install -m 0755 bin/system-shutdown  /usr/local/bin/system-shutdown
 	install -m 0755 bin/system-suspend   /usr/local/bin/system-suspend
 	install -m 0755 bin/xcolorpick       /usr/local/bin/xcolorpick
+	install -m 0755 bin/xf86-audio       /usr/local/bin/xf86-audio
+	install -m 0755 bin/xf86-backlight   /usr/local/bin/xf86-backlight
 	install -m 0755 bin/xlock            /usr/local/bin/xlock
 	install -m 0755 bin/xscreenshot      /usr/local/bin/xscreenshot
 
@@ -29,6 +31,8 @@ uninstall:
 	rm -f /usr/local/bin/system-shutdown
 	rm -f /usr/local/bin/system-suspend
 	rm -f /usr/local/bin/xcolorpick
+	rm -f /usr/local/bin/xf86-audio
+	rm -f /usr/local/bin/xf86-backlight
 	rm -f /usr/local/bin/xlock
 	rm -f /usr/local/bin/xscreenshot
 
