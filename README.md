@@ -46,8 +46,8 @@ $ sudo make uninstall
 
 | Tool | Description |
 |------|-------------|
-| [xf86-audio](bin/xf86-audio)             | Adjust your screens backlight. Supports notifications. |
-| [xf86-backlight](bin/xf86-backlight)     | Increase, decrease and mute currently enabled audio device. Supports notifications. |
+| [xf86-audio](bin/xf86-audio)             | Increase, decrease and mute currently selected (active) audio device. Supports notifications. |
+| [xf86-backlight](bin/xf86-backlight)     | Adjust your screens backlight. Supports notifications. |
 
 #### X tools
 
