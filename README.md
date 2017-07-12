@@ -37,17 +37,17 @@ $ sudo make uninstall
 
 | Tool | Description |
 |------|-------------|
-| [system-hibernate](bin/system-hibernate) | Wrapper script to hibternate as user. |
-| [system-reboot](bin/system-reboot)       | Wrapper script to reboot as user.     |
-| [system-shutdown](bin/system-shutdown)   | Wrapper script to shutdown as user.   |
-| [system-suspend](bin/system-suspend)     | Wrapper script to suspend as user.    |
+| [system-hibernate](bin/system-hibernate) | Wrapper script to hibternate as user. (systemd or dbus) |
+| [system-reboot](bin/system-reboot)       | Wrapper script to reboot as user. (systemd or dbus)     |
+| [system-shutdown](bin/system-shutdown)   | Wrapper script to shutdown as user. (systemd or dbus)   |
+| [system-suspend](bin/system-suspend)     | Wrapper script to suspend as user. (systemd or dbus)    |
 
 #### Hardware tools
 
 | Tool | Description |
 |------|-------------|
 | [xf86-audio](bin/xf86-audio)             | Adjust your screens backlight. Supports notifications. |
-| [xf86-backlight](bin/xf86-backlight)     | Increase, decrease and mut currently enabled audio device. Supports notifications. |
+| [xf86-backlight](bin/xf86-backlight)     | Increase, decrease and mute currently enabled audio device. Supports notifications. |
 
 #### X tools
 
