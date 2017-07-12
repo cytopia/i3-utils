@@ -15,6 +15,7 @@
 
 # Keep folders
 !.keepme
+build/
 
 ######################################
 # GENERIC

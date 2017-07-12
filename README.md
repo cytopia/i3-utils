@@ -1,22 +1,36 @@
 # i3-utils
 
-A few shell wrapper for common everyday tools on [i3](https://github.com/i3/i3).
+A few tools for a minimalistic [i3](https://github.com/i3/i3) setup.
 
-Most scripts write errors (missing dependencies and failures) to stderr and logfies und `~/.log/<script-name>.err`.
 
 ## Integration
 
 #### Install
 
-```shell
+This will add binaries to `/usr/local/bin/` as well as systemd files to `/usr/lib/systemd/`.
+
+```bash
+$ ./configure
 $ sudo make install
 ```
 
 #### Uninstall
 
-```shell
+This will remove binaries from `/usr/local/bin/` as well as systemd files from `/usr/lib/systemd/`.
+
+```bash
 $ sudo make uninstall
 ```
+
+
+## Systemd
+
+| Tool | Target | Description |
+|------|--------|-------------|
+| [70-close_lid.conf](systemd/logind.conf.d/70-close_lid.conf) | `/usr/lib/systemd/logind.conf.d/` | Systemd login configuration to handle notebook lid close. Will put the computer to sleep when the lid closes.<br/><br/><strong>Note: </strong>Only going to sleep when:<br/><ul><li>No power or workstation is connected</li><li>No external monitor is connected</li><li>No graphical desktop environment already handles lid close actions and prevents systemd via low-level inhibitor lock.</li></ul> |
+| [suspend.service](systemd/system/suspend.service) | `/usr/lib/systemd/system/` | Suspend addition to lock the screen before going to sleep with the bundled tool [xlock](bin/xlock). |
+|
+
 
 ## Tools
 
